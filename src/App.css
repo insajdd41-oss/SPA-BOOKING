@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #faf7f5;
+  color: #2d2a28;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #6b4f4f;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: #8a7b78;
+}
+
+/* Сводка */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 24px 0 32px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.stat-value {
+  font-size: 22px;
+  font-weight: 600;
+  color: #6b4f4f;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #8a7b78;
+}
+
+/* Блоки */
+.block {
+  margin-bottom: 32px;
+}
+
+.block h2 {
+  font-size: 18px;
+  color: #6b4f4f;
+  margin: 0 0 12px;
+}
+
+/* Список записей */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+}
+
+.card-info {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #8a7b78;
+}
+
+/* Бейдж статуса */
+.badge {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.badge-new {
+  background: #e8f1ff;
+  color: #2a63b8;
+}
+
+.badge-confirmed {
+  background: #e6f7ec;
+  color: #2d7a45;
+}
+
+.badge-done {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.badge-cancelled {
+  background: #fdecec;
+  color: #b33a3a;
+}
+
+.empty {
+  color: #8a7b78;
+  font-style: italic;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+  .card-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
