@@ -133,3 +133,68 @@ body {
     align-items: flex-start;
   }
 }
+
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.app-logo {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #6b4f4f;
+}
+
+.menu {
+  display: flex;
+  gap: 16px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #8a7b78;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.menu a:hover {
+  color: #6b4f4f;
+  background: #f5eeea;
+}
+
+.menu a.active {
+  color: #6b4f4f;
+  font-weight: 600;
+  background: #f0e4de;
+}
+
+.app-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 24px;
+  color: #8a7b78;
+  font-size: 13px;
+  border-top: 1px solid #efe6e1;
+}
+
+.page h1 {
+  color: #6b4f4f;
+  margin-top: 0;
+}
+
+.page p {
+  color: #8a7b78;
+}
