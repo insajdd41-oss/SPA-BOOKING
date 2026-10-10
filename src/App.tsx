@@ -1,10 +1,8 @@
 import { mockBookings } from './data/mockBookings';
 import './App.css';
 
-// Фиксированная «сегодняшняя» дата для стабильной демонстрации
 const TODAY = '2026-08-31';
 
-// Вычисляем статус записи с учётом даты
 function getStatusLabel(booking: typeof mockBookings[number]): string {
   if (booking.status === 'cancelled') return 'Отменена';
   if (booking.status === 'done') return 'Завершена';
