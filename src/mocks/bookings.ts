@@ -194,3 +194,11 @@ export const mockBookings: Booking[] = [
     createdAt: '2026-09-02',
   },
 ];
+
+export function fetchBookingsMock(): Promise<Booking[]> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve([...mockBookings]);
+    }, 700);
+  });
+}
